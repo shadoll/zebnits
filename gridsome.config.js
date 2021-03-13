@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Zebnits',
+  pathPrefix: process.env.PATH_PREFIX ? process.env.PATH_PREFIX : '/',
   outputDir: "public",
   chainWebpack: config => {
     config.resolve.alias.set('@images', '@/assets/images')
