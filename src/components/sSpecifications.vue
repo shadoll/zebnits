@@ -7,7 +7,7 @@
                     <p v-t="'specifications.desc'" />
                 </b-col>
             </b-row>
-            <b-row class="row row-feat">
+            <b-row>
                 <b-col md="6" class="fadeInLeft" v-wow>
                     <b-col md="12"
                         class="feat-list"
@@ -34,7 +34,7 @@
                         </div>
                     </b-col>
                 </b-col>
-                <b-col md="6" class="feature-2-pic fadeInRight" v-wow>
+                <b-col md="6" class="fadeInRight" v-wow>
                     <g-image
                         src="~/images/material_window.jpg"
                         class="img-responsive"

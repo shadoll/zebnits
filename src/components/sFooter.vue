@@ -37,3 +37,48 @@
         computed: {},
     };
 </script>
+
+<style lang="scss">
+    $color: #8ca429;
+    $orange: #dd9933;
+
+    .social {
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+            padding-right: 0.3em;
+            padding-bottom: 0.3em;
+
+            a {
+                display: block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                color: $color;
+                transition: all 0.8s ease;
+                border-radius: 50%;
+                font-size: 22px;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $color;
+                }
+
+                i {
+                    color: #fff;
+                    margin: 0;
+                }
+            }
+
+            .facebook {
+                &:hover {
+                    background-color: #3b5998;
+                }
+            }
+        }
+    }
+</style>
