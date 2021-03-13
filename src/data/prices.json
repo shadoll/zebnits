@@ -1,0 +1,37 @@
+{
+    "base_price": 2660,
+    "sill_base_price": "2100",
+    "install": {
+        "price_rate": 0.15
+    },
+    "material": {
+        "pine": {
+            "price_rate": 1
+        },
+        "oak": {
+            "price_rate": 1.7
+        },
+        "ash": {
+            "price_rate": 1.6
+        }
+    },
+    "girder": {
+        "timber1": {
+            "price_rate": 1
+        },
+        "timber2": {
+            "price_rate": 1.07
+        }
+    },
+    "paint": {
+        "one": {
+            "price_rate": 1
+        },
+        "double": {
+            "price_rate": 1.02
+        },
+        "energo": {
+            "price_rate": 1.05
+        }
+    }
+}
