@@ -21,76 +21,65 @@
                             v-wow
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1394075488377_default.jpg"
                             class="fadeInUp"
                             v-wow
                             data-wow-delay="0.2s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1394075495515_default.jpg"
                             class="fadeInUp"
                             v-wow
                             data-wow-delay="0.3s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1394075264042_default.jpg"
                             class="fadeInUp"
                             v-wow
                             data-wow-delay="0.4s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1394075522052_bulletin.jpg"
                             class="fadeInUp"
                             v-wow
                             data-wow-delay="0.5s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1394075525979_bulletin.jpg"
                             class="wow fadeInUp"
                             data-wow-delay="0.6s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1394075529927_bulletin.jpg"
                             class="fadeInUp"
                             v-wow
                             data-wow-delay="0.7s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1394075533849_bulletin.jpg"
                             class="fadeInUp"
                             v-wow
                             data-wow-delay="0.8s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1394075539664_bulletin.jpg"
                             class="fadeInUp"
                             v-wow
                             data-wow-delay="0.9s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1394075546987_default.jpg"
                             class="fadeInUp"
                             v-wow
                             data-wow-delay="1.0s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1428669220316_default.jpg"
                             class="fadeInUp"
                             v-wow
                             data-wow-delay="1.1s"
                         />
                         <g-image
-                            alt="client"
                             src="~/images/colors/1428669266937_default.jpg"
                             class="fadeInUp"
                             v-wow
@@ -103,8 +92,35 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    #colors {
+        h2 {
+            margin: 15px 0 15px 0;
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        .container {
+            padding-bottom: 50px;
+        }
+    }
     .container {
         color: white;
+    }
+    .colors-bg {
+        background-image: url("../images/color.jpg");
+    }
+
+    .colors {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            height: 80px;
+            width: auto;
+            margin: 10px;
+        }
     }
 </style>

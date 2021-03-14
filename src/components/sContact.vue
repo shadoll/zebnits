@@ -50,6 +50,9 @@
 </template>
 
 <style lang="scss" scoped>
+    $color: #8ca429;
+    $orange: #dd9933;
+
     #contact {
         width: 100%;
         min-height: 100%;
@@ -67,5 +70,29 @@
     }
     .contact-bg {
         background-image: url("../images/bg-contacts.jpg");
+    }
+
+    .ul-address {
+        a {
+            font-weight: normal;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        li {
+            padding-right: 20px;
+            margin-bottom: 8px;
+            list-style: none;
+            color: white;
+
+            .mdi {
+                margin-left: 15px;
+                position: absolute;
+                left: 0;
+                color: $color;
+            }
+        }
     }
 </style>

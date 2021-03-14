@@ -42,6 +42,20 @@
     $color: #8ca429;
     $orange: #dd9933;
 
+    #footer {
+        color: #fff;
+        background-color: #222;
+        padding: 50px 0 50px;
+    }
+
+    .site-keywords {
+        font-size: 13px;
+        color: #777;
+        line-height: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
     .social {
         ul {
             padding: 0;

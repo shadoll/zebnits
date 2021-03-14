@@ -44,3 +44,16 @@
         </div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+  #specifications {
+    padding: 100px 0 80px 0;
+    background-color: #fff;
+
+    h2 {
+      margin: 15px 0 15px 0;
+      font-size: 40px;
+      font-weight: 300;
+    }
+  }
+</style>

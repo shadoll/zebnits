@@ -256,7 +256,7 @@
             };
         },
         created() {
-            localStorage.removeItem("order");
+            // localStorage.removeItem("order");
             this.minPrice();
         },
         methods: {
@@ -398,5 +398,47 @@
     };
 </script>
 
-<style>
+<style lang="scss" scoped>
+    $color: #8ca429;
+    $orange: #dd9933;
+
+    #prices {
+        padding-top: 100px;
+        background-color: #fff;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+    }
+
+    .window-type {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 10px 0;
+        margin: 10px 0;
+
+        .inner {
+            width: 100%;
+            display: flex;
+        }
+
+        img {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .active {
+            background-color: $color;
+        }
+    }
+
+    .package-option {
+        padding: 50px 0 100px;
+    }
+    @media (max-width: 767px) {
+        .package-option {
+            padding: 50px 0 50px;
+        }
+    }
 </style>

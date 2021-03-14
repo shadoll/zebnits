@@ -27,3 +27,29 @@
         </div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+    #type {
+        padding: 30px 0 80px 0;
+        background-color: #f6f6f6;
+
+        ol {
+            font-size: 20px;
+        }
+
+        ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+        h2 {
+            margin: 15px 0 15px 0;
+            font-size: 40px;
+            font-weight: 300;
+        }
+    }
+</style>

@@ -145,7 +145,9 @@
                 return null;
             },
             order() {
-                return this.$store.state.order;
+                let order = this.$store.state.order;
+                if (order === undefined || order.length == 0) return "";
+                return order;
             },
         },
         directives: {
@@ -164,3 +166,15 @@
         },
     };
 </script>
+
+<style lang="scss" scoped>
+    #order {
+        background: #f6f6f6;
+        padding: 70px 0 70px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 300;
+        }
+    }
+</style>
