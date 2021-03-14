@@ -1,10 +1,7 @@
 <template>
     <Layout>
         <div data-spy="scroll" data-target="#navbar-scroll">
-            <div class="parallax-container">
-                <parallax fixed :speed-factor="0.3">
-                    <img src="../images/bg.jpg" />
-                </parallax>
+            <div class="parallax-container fullscreen">
                 <div class="parallax-content landing">
                     <div class="container">
                         <div class="row">
@@ -63,7 +60,6 @@
 <script>
     import "~/assets/main.scss";
     // import $ from "jquery";
-    import Parallax from "vue-parallaxy";
     import sMenu from "~/components/sMenu";
     import sIntro from "~/components/sIntro";
     import sFeature from "~/components/sFeature";
@@ -76,7 +72,6 @@
 
     export default {
         components: {
-            Parallax,
             sMenu,
             sIntro,
             sFeature,
@@ -87,17 +82,14 @@
             sOrder,
             sContact,
         },
-        data: () => ({
-        }),
+        data: () => ({}),
         metaInfo: {
             title: "Zebnits",
         },
         mounted() {
             window.$ = require("jquery");
-
         },
-        methods: {
-        },
+        methods: {},
         computed: {
             price() {
                 return this.$store.state.minprice;
@@ -106,9 +98,56 @@
     };
 </script>
 
-<style>
+<style lang="scss" scoped>
+    #app .btn-primary{
+        margin: 0 20px;
+        text-transform: uppercase;
+    }
+</style>
+<style lang="scss">
+    .logo {
+        margin: 100px 0 40px 0;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .landing h1 {
+        font-size: 56px;
+        font-weight: 300;
+        color: #fff;
+        margin: 30px 0 30px 0;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    .landing p,
+    .landing h2 {
+        color: #fff;
+    }
+
+    .landing-text {
+        margin-bottom: 20px;
+        font-size: 17px !important;
+    }
+
+    .head-btn {
+        margin-bottom: 150px;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            padding: 0;
+            margin: 5px 0 0;
+        }
+    }
     .home-links a {
         margin-right: 1rem;
+    }
+
+    .parallax-container{
+        background-image: url("../images/bg.jpg");
     }
 
     .parallax-container {
@@ -124,5 +163,64 @@
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.6);
         color: white;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        .logo {
+            margin: 100px 0 30px 0;
+        }
+
+        .landing h1 {
+            margin: 60px 0 60px 0;
+        }
+
+        .landing-text {
+            margin: 60px 0 40px 0;
+        }
+        .head-btn {
+            margin: 50px 0 100px;
+        }
+    }
+    @media (max-width: 767px) {
+        .logo {
+            margin: 40px 0 30px 0;
+        }
+        .head-btn {
+            margin: 30px 0 80px;
+        }
+    }
+    @media (max-width: 667px) {
+        .logo {
+            margin: 30px 0 30px 0;
+        }
+        .landing h1 {
+            font-size: 50px;
+            margin: 10px 0 25px 0;
+        }
+
+        .landing-text {
+            margin-top: 20px;
+        }
+    }
+    @media (max-width: 568px) {
+        .logo {
+            margin: 15px 0 15px 0;
+        }
+        .landing h1 {
+            font-size: 40px;
+            margin: 20px 0 10px 0;
+        }
+
+        .landing-text p {
+            font-size: 16px !important;
+        }
+    }
+    @media (max-width: 320px) {
+        .logo {
+            margin: 30px 0 20px 0;
+        }
+        .landing h1 {
+            margin: 20px 0 35px 0;
+        }
     }
 </style>
