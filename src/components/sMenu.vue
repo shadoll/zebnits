@@ -4,21 +4,7 @@
         <b-navbar-brand href="#"
             ><g-image src="~/images/logo_white.svg" width="150"
         /></b-navbar-brand>
-        <!-- <nav class="navbar-wrapper navbar-default"> -->
-        <!-- <div class="container"> -->
-        <!-- <div class="navbar-header">
-                    <button
-                        type="button"
-                        class="navbar-toggle"
-                        data-toggle="collapse"
-                        data-target=".navbar-backyard"
-                    >
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div> -->
+
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
@@ -27,9 +13,10 @@
                     v-for="(val, key) in $t('menu')"
                     :key="key"
                     :href="val.url"
-                    v-html="val.title"
                     class="nav-link"
-                />
+                >
+                    {{ val.title }}
+                </b-nav-item>
             </b-navbar-nav>
 
             <!-- <div
@@ -48,11 +35,20 @@
     <!-- </div> -->
 </template>
 
+<script>
+    export default {
+    };
+</script>
+
 <style scoped>
     .navbar {
         background-color: #8ca429;
     }
     .navbar-nav .nav-link {
         color: #fff;
+    }
+    .navbar-nav a.nav-link {
+        color: #fff !important;
+        font-weight: 300 !important;
     }
 </style>

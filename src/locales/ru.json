@@ -8,7 +8,7 @@
     "menu": {
         "intro": {
             "title": "О компании",
-            "url": "#info"
+            "url": "#intro"
         },
         "feature": {
             "title": "Преимущества",
