@@ -97,6 +97,7 @@
                                     pill
                                     class="btn-primary"
                                     v-t="'actions.order'"
+                                    v-b-modal.modal-order
                                 />
                             </b-col>
                         </b-row>
@@ -104,6 +105,17 @@
                 </b-col>
             </b-row>
         </div>
+
+        <b-modal id="modal-order" hide-footer :title="$t('order.sorry_title')">
+            <p class="my-4" v-t="'order.sorry_content'" />
+            <b-button
+                class="mt-3 btn-primary"
+                block
+                @click="$bvModal.hide('modal-order')"
+                v-t="'actions.close'"
+            />
+        </b-modal>
+
         <div class="container" v-if="send">
             <b-row align-h="center">
                 <b-col sm="10" class="text-center">
