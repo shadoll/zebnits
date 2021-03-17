@@ -51,4 +51,7 @@
         color: #fff !important;
         font-weight: 300 !important;
     }
+    .navbar-toggler {
+        border-color: transparent;
+    }
 </style>

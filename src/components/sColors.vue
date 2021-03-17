@@ -109,6 +109,7 @@
     }
     .colors-bg {
         background-image: url("../images/color.jpg");
+        background-size: cover;
     }
 
     .colors {

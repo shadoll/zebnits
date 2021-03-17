@@ -9,7 +9,8 @@
             </b-row>
             <b-row>
                 <b-col md="6" class="fadeInLeft" v-wow>
-                    <b-col md="12"
+                    <b-col
+                        md="12"
                         class="feat-list"
                         v-for="(spec, key) in $t('specifications.specs')"
                         :key="key"
@@ -46,14 +47,22 @@
 </template>
 
 <style lang="scss" scoped>
-  #specifications {
-    padding: 100px 0 80px 0;
-    background-color: #fff;
+    #specifications {
+        padding: 100px 0 80px 0;
+        background-color: #fff;
 
-    h2 {
-      margin: 15px 0 15px 0;
-      font-size: 40px;
-      font-weight: 300;
+        h2 {
+            margin: 15px 0 15px 0;
+            font-size: 40px;
+            font-weight: 300;
+        }
     }
-  }
+    @media (max-width: 568px) {
+        #specifications {
+            padding-top: 1rem;
+        }
+        img {
+            padding-top: 2rem;
+        }
+    }
 </style>

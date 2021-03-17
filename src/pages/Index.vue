@@ -104,13 +104,14 @@
         text-transform: uppercase;
     }
 </style>
+
 <style lang="scss">
     .logo {
         margin: 100px 0 40px 0;
 
         img {
-            width: 200px;
-            height: 200px;
+            width: auto;
+            height: 100%;
         }
     }
 
@@ -204,7 +205,8 @@
     }
     @media (max-width: 568px) {
         .logo {
-            margin: 15px 0 15px 0;
+            margin: 15px 0;
+            height: 15svh;
         }
         .landing h1 {
             font-size: 40px;
