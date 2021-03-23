@@ -21,10 +21,15 @@
                                 <div
                                     class="landing-text fadeInUp"
                                     v-wow
+                                    data-wow-delay="0.2s"
                                     v-t="'main.desc'"
                                 />
 
-                                <div class="head-btn fadeInLeft" v-wow>
+                                <div
+                                    class="head-btn fadeInLeft"
+                                    v-wow
+                                    data-wow-delay="0.5s"
+                                >
                                     <h2
                                         class="min_price"
                                         v-t="{
@@ -99,7 +104,7 @@
 </script>
 
 <style lang="scss" scoped>
-    #app .btn-primary{
+    #app .btn-primary {
         margin: 0 20px;
         text-transform: uppercase;
     }
@@ -147,7 +152,7 @@
         margin-right: 1rem;
     }
 
-    .parallax-container{
+    .parallax-container {
         background-image: url("../images/bg.jpg");
     }
 
