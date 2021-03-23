@@ -9,6 +9,7 @@
                                 <div class="logo fadeInUp" v-wow>
                                     <g-image
                                         src="~/images/logo_square_white.svg"
+                                        width="125"
                                     />
                                 </div>
 
@@ -148,6 +149,7 @@
             margin: 5px 0 0;
         }
     }
+
     .home-links a {
         margin-right: 1rem;
     }
@@ -160,6 +162,7 @@
         position: relative;
         height: 100vh;
     }
+
     .parallax-content {
         position: absolute;
         top: 0;
@@ -187,6 +190,7 @@
             margin: 50px 0 100px;
         }
     }
+
     @media (max-width: 767px) {
         .logo {
             margin: 40px 0 30px 0;
@@ -195,6 +199,7 @@
             margin: 30px 0 80px;
         }
     }
+
     @media (max-width: 667px) {
         .logo {
             margin: 30px 0 30px 0;
@@ -208,10 +213,11 @@
             margin-top: 20px;
         }
     }
+
     @media (max-width: 568px) {
         .logo {
             margin: 15px 0;
-            height: 15svh;
+            height: 15vh;
         }
         .landing h1 {
             font-size: 40px;
@@ -222,6 +228,7 @@
             font-size: 16px !important;
         }
     }
+
     @media (max-width: 320px) {
         .logo {
             margin: 30px 0 20px 0;
