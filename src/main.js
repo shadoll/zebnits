@@ -16,9 +16,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
-  if (isClient) {
-    window.$ = require('jquery')
-  }
+  // if (isClient) {
+  //   window.$ = require('jquery')
+  // }
 
   Vue.use(Vuex);
 

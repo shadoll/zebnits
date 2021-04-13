@@ -65,7 +65,6 @@
 
 <script>
     import "~/assets/main.scss";
-    // import $ from "jquery";
     import sMenu from "~/components/sMenu";
     import sIntro from "~/components/sIntro";
     import sFeature from "~/components/sFeature";
@@ -93,7 +92,7 @@
             title: "Zebnits",
         },
         mounted() {
-            window.$ = require("jquery");
+            // window.$ = require("jquery");
         },
         methods: {},
         computed: {
