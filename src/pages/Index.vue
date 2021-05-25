@@ -91,7 +91,7 @@
         metaInfo: {
             title: "Zebnits",
         },
-        mounted() {
+        updated() {
             window.scrollTo(0, 1);
             window.scrollTo(0, -1);
         },
