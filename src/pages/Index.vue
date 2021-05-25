@@ -21,15 +21,11 @@
 
                                 <div
                                     class="landing-text fadeInUp"
-                                    v-wow
-                                    data-wow-delay="0.2s"
                                     v-t="'main.desc'"
                                 />
 
                                 <div
                                     class="head-btn fadeInLeft"
-                                    v-wow
-                                    data-wow-delay="0.5s"
                                 >
                                     <h2
                                         class="min_price"
@@ -92,8 +88,6 @@
             title: "Zebnits",
         },
         updated() {
-            window.scrollTo(0, 1);
-            window.scrollTo(0, -1);
         },
         methods: {},
         computed: {
