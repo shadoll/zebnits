@@ -92,7 +92,8 @@
             title: "Zebnits",
         },
         mounted() {
-            // window.$ = require("jquery");
+            window.scrollTo(0, 1);
+            window.scrollTo(0, -1);
         },
         methods: {},
         computed: {
