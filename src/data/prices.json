@@ -1,6 +1,6 @@
 {
-    "base_price": 3060,
-    "sill_base_price": "2415",
+    "base_price": 3366,
+    "sill_base_price": "2656",
     "install": {
         "price_rate": 0.15
     },
